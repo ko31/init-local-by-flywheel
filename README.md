@@ -8,5 +8,5 @@ Local by Flywheel で作成した WordPress サイトを初期化、日本語化
 1. サイトを右クリックして `Open Site SSH` を開く。
 1. コンソール上で下記コマンドを実行する。
 ```
-# wp eval 'exec(file_get_contents("https://raw.githubusercontent.com/ko31/init-local-by-flywheel/master/command.sh")." > /dev/null", $output); printf("%s\n", implode("\n", $output));'
+wp eval 'exec(file_get_contents("https://raw.githubusercontent.com/ko31/init-local-by-flywheel/master/command.sh")." > /dev/null", $output); printf("%s\n", implode("\n", $output));'
 ```

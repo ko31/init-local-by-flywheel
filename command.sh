@@ -30,5 +30,3 @@ wp --allow-root plugin install query-monitor --activate
 
 # WordPress 日本語コアファイルをアップデート
 wp --allow-root core update --locale=ja --force
-
-echo "Done!"
