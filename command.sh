@@ -30,8 +30,7 @@ wp --allow-root plugin install query-monitor --activate
 
 # Mailhog メールが文字化けしないよう WP Multibyte Patch の設定調整
 # https://eastcoder.com/code/wp-multibyte-patch/
-php="<?php\n\$wpmp_conf['mail_mode'] = 'UTF-8';\n\$wpmp_conf['patch_wp_mail'] = false;"
-echo -e "$php" >> wp-content/wpmp-config.php
+printf "%s\n%s\n%s" "<?php" "\$wpmp_conf['mail_mode'] = 'UTF-8';" "\$wpmp_conf['patch_wp_mail'] = false;" >> wp-content/wpmp-config.php
 
 # WordPress 日本語コアファイルをアップデート
 wp --allow-root core update --locale=ja --force
