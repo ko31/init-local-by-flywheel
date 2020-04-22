@@ -33,7 +33,7 @@ wp --allow-root plugin install query-monitor --activate
 echo "<?php
 \$wpmp_conf['mail_mode'] = 'UTF-8';
 \$wpmp_conf['patch_wp_mail'] = false;
-" >> wpmp-config.php
+" >> wp-content/wpmp-config.php
 
 # WordPress 日本語コアファイルをアップデート
 wp --allow-root core update --locale=ja --force
