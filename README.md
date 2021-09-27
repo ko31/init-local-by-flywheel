@@ -39,3 +39,4 @@ wp eval 'exec(file_get_contents("https://raw.githubusercontent.com/ko31/init-loc
 
 - macOS Mojave + Local by Flywheel 3.3.0
 - macOS Mojave + Local 5.3.1
+- macOS Catalina + Local 6.1.2
